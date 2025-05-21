@@ -1,22 +1,21 @@
-.topnavbar{
+.top-navbar{
     width: 100%;
     top: 0%;
     left:  0%;
-    height: 80px;
+    height: 60px;
     position: absolute;
     box-sizing: border-box;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    background-color: darkgray;
 }
-.searchbox{
+.search-box{
     width: 100%;
     display: flex; 
     justify-content: flex-start;
 }
 div{
-    border: solid;
-    border-color: green;
     box-sizing: border-box;
     width: 20%;
 }
@@ -26,4 +25,11 @@ div{
     border: 0;
     margin: 0;
     
+}
+.side-menu-button{
+    position: absolute;
+    box-sizing: border-box;
+}
+#side-menu-toggle{
+    display: none;
 }
