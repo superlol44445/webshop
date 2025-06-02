@@ -1,17 +1,19 @@
 :root{
     --default-navbar-div-width: 480px;
-    
 }
 .top-navbar{
-    width: 100%;
-    top: 0%;
-    left:  0%;
-    height: 60px;
     position: absolute;
+        top:0%;
+        left: 0%;
+
     box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
     background-color: gray;
 }
 .search-box{
@@ -26,28 +28,30 @@ div{
     width: 20%;
 }
 #search-bar-input-field{
-    font-size: large;
     position: relative;
 
+    box-sizing: border-box;
+        height: 40px;
+        width: calc(100% - var(--search-button-width));
+
+    font-size: large;
     border-radius: 15px;
     border-style: hidden;
     outline: none;
 
-    box-sizing: border-box;
-    height: 40px; 
-    width: calc(100% - var(--search-button-width));
+    
 }
 #search-button{
+    box-sizing: border-box;
+    height: 40px;
+    width: var(--search-button-width);
+
     display: flex;
         flex-direction: column;
         align-items: center;
     
     border-radius: 15px;
     border-style: hidden;
-
-    box-sizing: border-box;
-    height: 40px;
-    width: var(--search-button-width);
 }
 #search-button:hover{
     background-color: lightgray;
