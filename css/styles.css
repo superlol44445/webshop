@@ -1,3 +1,7 @@
+:root{
+    --default-navbar-div-width: 480px;
+    
+}
 .top-navbar{
     width: 100%;
     top: 0%;
@@ -8,23 +12,45 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    background-color: darkgray;
+    background-color: gray;
 }
 .search-box{
     width: 100%;
     display: flex; 
-    justify-content: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+    --search-button-width: 70px;
 }
 div{
     box-sizing: border-box;
     width: 20%;
 }
 #search-bar-input-field{
-    outline: none;
     font-size: large;
-    border: 0;
-    margin: 0;
+    position: relative;
+
+    border-radius: 15px;
+    border-style: hidden;
+    outline: none;
+
+    box-sizing: border-box;
+    height: 40px; 
+    width: calc(100% - var(--search-button-width));
+}
+#search-button{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
     
+    border-radius: 15px;
+    border-style: hidden;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: var(--search-button-width);
+}
+#search-button:hover{
+    background-color: lightgray;
 }
 .side-menu-button{
     position: absolute;

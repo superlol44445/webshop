@@ -7,34 +7,37 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div style="top: 50px;left: 0%; position: absolute;">
-        <input type="checkbox" id="side-menu-toggle">
-        <label for="side-menu-toggle" style="font-size:xx-large;">&#9776;</label>
-    </div>
-
-
-    <div class="top-navbar" style="border: none;">
+    <div class="top-navbar" style="display: flex; justify-content: center; align-items: center;">
         <div style="min-width: 160px; max-width: 160px;">
-           <p style="font-size: xx-large;display: inline;">leo's stuffs</p> 
+           <p style="font-size: xx-large;display: inline; left: 5px; position: relative;">leo's stuffs</p> 
         </div>
 
 
-        <div class="search-box" >
+        <div class="search-box"  >
+            <input type="text" id="search-bar-input-field" placeholder="search cool-stuff.com">
+            <button id="search-button">
+                <img src="icons/search-icon.svg" alt="" style="height: 40px; bottom: 2px;">
+            </button>
             <script>
 
             </script>
-            <img src="" alt="">
-            <input type="text" id="search-bar-input-field" placeholder="search cool-stuff.com">
-            <img src="" alt="">
+            
         </div>
 
-        <div style="min-width: 120px; max-width: 120px;">
+        <div style="min-width: var(--default-navbar-div-width); max-width: var(--default-navbar-div-width);">
             
         </div>
         
-        <div style="min-width: 120px; max-width: 120px;">
+        <div style="min-width: var(--default-navbar-div-width); max-width: var(--default-navbar-div-width);">
             
         </div>
+    </div>
+
+    <div
+        style="top: 65px;left: 0%; position: absolute; background-color: darkgrey; height: 40px; width: 40px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+        <input type="checkbox" id="side-menu-toggle">
+        <label for="side-menu-toggle"
+            style="font-size:xx-large; position: relative; left: 3px; bottom: 3px;">&#9776;</label>
     </div>
 </body>
 </html>
